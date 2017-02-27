@@ -22,7 +22,7 @@ sum(baby_names_MA_2015_count)
 unique_names <- aggregate(Proportion~Year+Name,baby_names,sum)
 popular_names_15 <-  subset(unique_names[,c("Name","Proportion")], unique_names$Year==2015 & unique_names$Proportion>=0.5)
 ## 5- Save data frame as csv file
-write.csv(popular_names_2015, file = "popular_names_20151.csv", row.names=FALSE)
+write.csv(popular_names_2015, file = "popular_names_2015.csv", row.names=FALSE)
 ## 6- Total number in 2015
 sum(baby_names_2015$Count)
 ## 7- Total number of babies that name as zeynep in all years.
